@@ -1,0 +1,65 @@
+.chart {
+        width: 100%;
+        height: 20rem;
+        background: #0a0a0a;
+        border: 1px solid #2c2c2c;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        position: relative;
+        display: flex;
+        overflow: hidden;
+        background-image: linear-gradient(#171717 1px, transparent 0.1rem),
+          linear-gradient(90deg, #171717 1px, transparent 0.1rem);
+        background-size: 1.53rem 1.53rem;
+        background-position: bottom;
+      }
+      .chart_gradient {
+        width: 100%;
+        height: 100%;
+        background: #0a0a0a;
+        background: radial-gradient(circle, #0a0a0a00 0%, #0a0a0a 100%);
+      }
+      .bar_grid {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        padding: 4rem 0rem 2rem 0rem;
+      }
+      .bar {
+        width: 0.5rem;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+      .percentage {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .radiant_bg {
+        background: rgb(0, 116, 116);
+        background: linear-gradient(0deg, rgb(0, 116, 104) 0%, rgb(0, 255, 195) 100%);
+      }
+      .dire_bg {
+        background: rgb(116, 0, 39);
+        background: linear-gradient(0deg, rgb(116, 0, 33) 0%, rgb(255, 0, 85) 100%);
+      }
+      .hero_icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: -2.6rem;
+      }
+      .hero_label {
+        font-family: var(--motiva400);
+        font-size: 0.7rem;
+        color: #adadad;
+      }
