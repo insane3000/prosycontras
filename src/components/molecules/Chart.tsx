@@ -1,5 +1,5 @@
 import { extractJSON } from "@/libs/extractJSON";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Spinner from "../atoms/Spinner";
 import styled from "styled-components";
 
@@ -99,12 +99,17 @@ interface props {
   isStreaming: boolean;
 }
 export default function Chart(props: props) {
-  const data = extractJSON(props.response);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    if (!props.isStreaming) setData(extractJSON(props.response));
+  }, [props.isStreaming]);
 
   if (props.isStreaming) {
     return (
       <ChartSt>
-        <Spinner />
+        <div className="chart_gradient">
+          <Spinner />
+        </div>
       </ChartSt>
     );
   }

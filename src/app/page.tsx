@@ -51,8 +51,7 @@ export default function Home() {
         }
       }
     } catch (error) {
-      console.error("Error fetching streaming text:", error);
-      toast("Error fetching streaming text:", error || "");
+      toast("Error solicitando los datos.");
     } finally {
       setIsStreaming(false);
     }
@@ -76,7 +75,7 @@ export default function Home() {
       />
       <Chart response={response} isStreaming={isStreaming} />
       <Logs response={response} textAreaRef={textAreaRef} />
-      <Ad />
+      {/* <Ad /> */}
       <Toaster style={{ fontFamily: "var(--motiva400)" }} />
       {spinner && (
         <div className={styles.loader}>

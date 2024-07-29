@@ -1,3 +1,5 @@
+import { toast } from "sonner";
+
 export function extractJSON(text: string) {
   // Expresión regular para buscar el contenido JSON entre corchetes
   const jsonPattern = /\[\s*{[\s\S]*?}\s*]/;
@@ -10,10 +12,12 @@ export function extractJSON(text: string) {
       return jsonObject;
     } catch (error) {
       console.error("Error parsing JSON:", error);
+      toast("Error parsing JSON");
       return [];
     }
   } else {
     console.error("No JSON found in the text");
+    toast("No JSON found in the text");
     return [];
   }
 }

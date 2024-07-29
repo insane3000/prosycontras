@@ -15,8 +15,6 @@ export const prompt = (search: string) => {
             },
             ...
         ]
-        
-        Asegúrate de incluir "type" en lugar de "pro" o "contra" y "description" para la descripción de cada pro o contra, seguido de "importancia_racional".
-        
-              `;
+        Asegúrate de incluir "type" en lugar de "pro" o "contra" y "description" para la descripción de cada pro o contra, seguido de "importancia_racional" ademas revisa que el JSON resultante este bien formateado.
+        `;
 };
