@@ -75,7 +75,7 @@ export default function Home() {
       />
       <Chart response={response} isStreaming={isStreaming} />
       <Logs response={response} textAreaRef={textAreaRef} />
-      {/* <Ad /> */}
+      <Ad />
       <Toaster style={{ fontFamily: "var(--motiva400)" }} />
       {spinner && (
         <div className={styles.loader}>
