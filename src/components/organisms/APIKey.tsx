@@ -64,7 +64,7 @@ const APIKeySt = styled.div`
       color: #ececec;
       font-family: var(--motiva400);
       font-size: 0.75rem;
-      padding: 0 1rem;
+      padding: 0 2.5rem 0 1rem;
       outline: none;
 
       // !HIDE UGLY ARROW
