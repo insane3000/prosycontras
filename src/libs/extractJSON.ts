@@ -17,7 +17,6 @@ export function extractJSON(text: string) {
     }
   } else {
     console.error("No JSON found in the text");
-    toast("No JSON found in the text");
     return [];
   }
 }

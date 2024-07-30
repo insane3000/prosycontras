@@ -3,7 +3,7 @@ import { createOpenAI } from "@ai-sdk/openai";
 import { streamText } from "ai";
 import styles from "./page.module.scss";
 import React, { useState, useRef, useEffect } from "react";
-import Chart from "@/components/molecules/Chart";
+import Chart from "@/components/organisms/Chart";
 import Search from "@/components/organisms/Search";
 import APIKey from "@/components/organisms/APIKey";
 import Ad from "@/components/atoms/Ad";
