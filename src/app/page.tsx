@@ -32,6 +32,7 @@ export default function Home() {
     e.preventDefault();
     if (apiKey.length === 0) {
       toast("Debes introducir tu Perplexity API Key");
+      window.scrollTo(0, 0)
       return;
     }
     setIsStreaming(true);
